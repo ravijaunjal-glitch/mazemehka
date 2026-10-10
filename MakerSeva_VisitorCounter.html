@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>गाव सेवा केंद्र | आपल्या गावाची, आपल्या माणसांची सेवा</title>
+<style>
+:root{--green:#08794f;--green2:#0da66b;--mint:#e8f7ef;--ink:#17342a;--muted:#64756d;--line:#dce9e2;--bg:#f3f8f5;--white:#fff;--orange:#f3a62a;--shadow:0 12px 32px #174b3212}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans Devanagari","Mangal",sans-serif}
+button,input,select,textarea{font:inherit}button{cursor:pointer;border:0}.topbar{background:linear-gradient(120deg,#075a3b,#0b9860);color:white;padding:20px 16px 26px;position:relative;overflow:hidden}.topbar:after{content:"";position:absolute;width:240px;height:240px;border:1px solid #ffffff26;border-radius:50%;right:-75px;top:-120px;box-shadow:0 0 0 28px #ffffff0c,0 0 0 58px #ffffff08}.head{max-width:1100px;margin:auto;display:flex;gap:14px;align-items:center;position:relative;z-index:1}.logo{width:58px;height:58px;display:grid;place-items:center;background:#ffffff20;border:1px solid #ffffff40;border-radius:18px;font-size:30px;flex-shrink:0}.head h1{font-size:clamp(23px,4vw,34px);margin:0;font-weight:850;letter-spacing:.1px}.head p{margin:4px 0 0;color:#d7f8e6;font-size:14px}.head-actions{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}.btn{padding:10px 14px;border-radius:12px;font-weight:750;display:inline-flex;align-items:center;justify-content:center;gap:7px;transition:.18s}.btn:hover{transform:translateY(-1px)}.btn-light{background:white;color:var(--green)}.btn-green{background:var(--green);color:white}.btn-soft{background:var(--mint);color:var(--green)}.btn-outline{background:white;border:1px solid var(--line);color:var(--ink)}.btn-danger{background:#fff0ef;color:#b3261e}.container{max-width:1100px;margin:-12px auto 0;padding:0 16px 100px;position:relative}.panel{background:white;border:1px solid #e7efe9;border-radius:20px;padding:18px;box-shadow:var(--shadow);margin-bottom:16px}.panel-title{display:flex;align-items:center;gap:10px;margin:0 0 14px;font-size:20px}.panel-title .ico{width:38px;height:38px;border-radius:12px;background:var(--mint);display:grid;place-items:center;font-size:19px}.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}.field{width:100%;padding:12px 13px;border:1px solid #d8e4dc;border-radius:12px;background:#fbfdfb;outline:none;color:var(--ink);min-width:0}.field:focus{border-color:var(--green2);box-shadow:0 0 0 3px #0da66b18}.field-label{display:block;font-size:13px;font-weight:750;margin:0 0 6px;color:#496157}.searchrow{display:grid;grid-template-columns:1fr 1fr;gap:10px}.small{font-size:12px;color:var(--muted)}.category-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px}.cat{background:#fff;border:1px solid var(--line);border-radius:15px;padding:13px 8px;text-align:center;color:var(--ink);font-weight:750;display:flex;flex-direction:column;align-items:center;gap:7px}.cat .cat-icon{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;font-size:23px;background:var(--mint)}.cat.active{border:2px solid var(--green2);background:#f0fbf5}.count{margin-left:auto;background:#e9f5ed;color:var(--green);padding:3px 9px;border-radius:99px;font-size:12px;font-weight:800}.section-head{display:flex;align-items:center;gap:10px;margin-bottom:14px}.section-head h2{font-size:20px;margin:0}.section-head .field{max-width:230px;margin-left:auto}.services-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.service-card{border:1px solid var(--line);border-radius:17px;padding:14px;display:flex;gap:12px;background:#fff;min-width:0}.avatar{width:66px;height:66px;border-radius:17px;background:#e7f4ec;display:grid;place-items:center;font-size:26px;overflow:hidden;flex-shrink:0;color:var(--green)}.avatar img{width:100%;height:100%;object-fit:cover}.service-info{min-width:0;flex:1}.service-info h3{margin:1px 0 5px;font-size:17px;overflow-wrap:anywhere}.tag{display:inline-block;background:#edf8f1;color:#08794f;padding:3px 8px;border-radius:7px;font-size:12px;font-weight:800}.meta{font-size:13px;color:#64756d;margin:7px 0;overflow-wrap:anywhere}.actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:9px}.actions .btn{font-size:12px;padding:8px 10px}.empty{text-align:center;padding:30px 12px;color:var(--muted);border:1px dashed #c8d9ce;border-radius:16px;grid-column:1/-1}.ticker{position:fixed;bottom:0;left:0;right:0;background:#075a3b;color:#fff;z-index:20;display:flex;align-items:center;min-height:43px;box-shadow:0 -5px 20px #103c2815}.ticker-label{background:#f3a62a;color:#322100;font-weight:900;padding:12px 13px;white-space:nowrap}.ticker-track{overflow:hidden;white-space:nowrap;flex:1}.ticker-text{display:inline-block;padding-left:100%;animation:marquee 24s linear infinite;font-weight:650;font-size:14px}.ticker:hover .ticker-text{animation-play-state:paused}@keyframes marquee{to{transform:translateX(-100%)}}.footer{text-align:center;color:var(--muted);font-size:12px;padding:8px 0 18px}.admin-box{display:none}.admin-box.open{display:block}.admin-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.admin-grid .wide{grid-column:1/-1}.admin-list{display:grid;gap:8px;margin-top:12px}.admin-row{display:flex;gap:10px;align-items:center;border:1px solid var(--line);border-radius:12px;padding:10px}.admin-row .grow{flex:1;min-width:0}.admin-row strong{display:block;overflow-wrap:anywhere}.admin-row small{color:var(--muted)}.notice-item{padding:9px 10px;border-radius:10px;background:#f4faf6;margin:6px 0;display:flex;justify-content:space-between;gap:8px;align-items:center}.hidden{display:none!important}.hint{font-size:12px;color:var(--muted);line-height:1.6}.modal-backdrop{display:none;position:fixed;inset:0;background:#0a251bcc;z-index:50;align-items:center;justify-content:center;padding:16px}.modal-backdrop.open{display:flex}.modal{background:white;border-radius:20px;padding:20px;width:min(520px,100%);max-height:90vh;overflow:auto;box-shadow:0 25px 70px #0003}.modal h2{margin:0 0 14px}.modal-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:16px}.toast{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);background:#17342a;color:white;padding:11px 16px;border-radius:12px;z-index:80;box-shadow:var(--shadow);max-width:90vw;text-align:center}.admin-toggle{margin:0 auto 14px;display:flex}.rule{height:1px;background:var(--line);margin:16px 0}
+@media(max-width:760px){.head{align-items:flex-start}.head-actions{flex-direction:column}.head-actions .btn{padding:8px 10px;font-size:12px}.hero-grid{grid-template-columns:1fr}.category-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.services-grid{grid-template-columns:1fr}.admin-grid{grid-template-columns:1fr}.admin-grid .wide{grid-column:auto}.panel{padding:14px;border-radius:17px}.searchrow{grid-template-columns:1fr}.section-head{flex-wrap:wrap}.section-head .field{max-width:none;order:3;flex-basis:100%;margin-left:0}.container{padding-left:11px;padding-right:11px}.head h1{font-size:23px}.logo{width:48px;height:48px;border-radius:15px}.ticker-label{padding:12px 8px;font-size:12px}.service-card{padding:11px}.avatar{width:56px;height:56px}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="head">
+    <div class="logo">🏡</div>
+    <div><h1>गाव सेवा केंद्र</h1><p>आपल्या गावाची, आपल्या माणसांची सेवा</p></div>
+    <div class="head-actions">
+      <button class="btn btn-light" id="adminOpen">⚙️ व्यवस्थापन</button>
+      <button class="btn btn-light" id="shareBtn">↗️ शेअर करा</button>
+    </div>
+  </div>
+</header>
+<main class="container">
+  <div class="hero-grid">
+    <section class="panel">
+      <h2 class="panel-title"><span class="ico">📍</span> सेवा शोधा</h2>
+      <label class="field-label" for="villageFilter">आपले गाव निवडा</label>
+      <select class="field" id="villageFilter"><option value="">सर्व गावे</option></select>
+      <p class="hint">गाव निवडा आणि उपलब्ध सेवा पाहा. फोन बटणाने थेट कॉल करता येईल.</p>
+    </section>
+
+  </div>
+  <section class="panel">
+    <div class="section-head"><h2>🧰 सेवा प्रकार</h2><span class="count" id="totalCount">0 सेवा</span></div>
+    <div class="category-grid" id="categories"></div>
+  </section>
+  <section class="panel" id="serviceResultsPanel">
+    <div class="section-head"><h2>📞 सेवा देणाऱ्या व्यक्ती</h2><span class="count" id="resultsCount">0 मिळाल्या</span></div>
+    <p class="hint">सेवा प्रकारावर क्लिक केल्यावर संबंधित व्यक्तीचे नाव आणि मोबाइल नंबर येथे दिसेल.</p>
+    <div class="services-grid" id="servicesGrid"></div>
+  </section>
+  <section class="panel">
+    <h2 class="panel-title"><span class="ico">☎️</span> व्यवस्थापक संपर्क</h2>
+    <div id="adminContactView" class="meta">संपर्क माहिती व्यवस्थापन विभागातून जोडा.</div>
+  </section>
+  <button class="btn btn-outline admin-toggle" id="adminOpenBottom">⚙️ व्यवस्थापन / नवीन सेवा जोडा</button>
+  <section class="panel" style="text-align:center;padding:13px 18px;margin-bottom:12px">
+    <div style="font-size:13px;color:var(--muted);font-weight:750">👥 एकूण व्हिजिटर</div>
+    <div id="visitorCount" style="font-size:28px;font-weight:900;color:var(--green);line-height:1.35">0</div>
+    <div class="small">या ब्राउझरवरील मोजणी</div>
+  </section>
+  <div class="footer">© <span id="year"></span> गाव सेवा केंद्र · माहिती अद्ययावत ठेवण्यासाठी व्यवस्थापकांशी संपर्क करा.</div>
+  <section class="panel admin-box" id="adminPanel">
+    <div class="section-head"><h2>🔐 व्यवस्थापन डॅशबोर्ड</h2><button class="btn btn-outline" id="adminClose">बंद करा ✕</button></div>
+    <div id="adminLogin">
+      <p class="hint">व्यवस्थापनासाठी PIN टाका. प्रथम वापरासाठी डिफॉल्ट PIN <b>123456</b> आहे. लॉगिन झाल्यावर PIN बदलू शकता.</p>
+      <div class="searchrow"><input class="field" id="adminPin" type="password" inputmode="numeric" maxlength="6" pattern="[0-9]{6}" placeholder="6 अंकी व्यवस्थापक PIN"><button class="btn btn-green" id="loginBtn">लॉगिन</button></div>
+    </div>
+    <div id="adminTools" class="hidden">
+      <div class="actions"><button class="btn btn-green" id="newProviderBtn">＋ सेवा देणारी व्यक्ती जोडा</button><button class="btn btn-soft" id="newNoticeBtn">📣 सूचना जोडा</button><button class="btn btn-outline" id="exportBtn">⬇️ बॅकअप डाउनलोड</button><button class="btn btn-outline" id="importBtn">⬆️ बॅकअप आयात</button><input class="hidden" id="importFile" type="file" accept=".json,application/json"></div>
+      <div class="rule"></div>
+      <h3>गावे व्यवस्थापन</h3>
+      <div class="searchrow"><input class="field" id="newVillageInput" placeholder="नवीन गावाचे नाव"><button class="btn btn-green" id="addVillageBtn">गाव जोडा</button></div>
+      <div id="villageAdminList" class="admin-list"></div>
+      <div class="rule"></div>
+      <h3>सेवा प्रकार व्यवस्थापन</h3>
+      <p class="hint">नवीन सेवा प्रकार आणि त्याचे चिन्ह जोडा. वापरात नसलेला प्रकार काढता येईल.</p>
+      <div class="searchrow">
+        <input class="field" id="newTradeName" placeholder="नवीन सेवा प्रकाराचे नाव">
+        <input class="field" id="newTradeIcon" placeholder="चिन्ह (उदा. 🔧)" maxlength="8">
+      </div>
+      <button class="btn btn-green" id="addTradeBtn" style="margin-top:8px">＋ सेवा प्रकार जोडा</button>
+      <div id="tradeAdminList" class="admin-list"></div>
+      <div class="rule"></div>
+      <h3>सेवा नोंदी</h3>
+      <div id="providerAdminList" class="admin-list"></div>
+      <div class="rule"></div>
+      <h3>सूचना व्यवस्थापन</h3>
+      <div id="noticeAdminList" class="admin-list"></div>
+      <div class="rule"></div>
+      <h3>व्यवस्थापक संपर्क माहिती</h3>
+      <div class="admin-grid">
+        <div><label class="field-label">व्यवस्थापकाचे नाव</label><input class="field" id="adminName" placeholder="नाव"></div>
+        <div><label class="field-label">मोबाइल नंबर</label><input class="field" id="adminPhone" type="tel" placeholder="मोबाइल नंबर"></div>
+        <div class="wide"><label class="field-label">WhatsApp नंबर (देश कोडसह, उदा. 919876543210)</label><input class="field" id="adminWhatsApp" type="tel" placeholder="919876543210"></div>
+        <div class="wide"><label class="field-label">लहान परिचय / पत्ता</label><input class="field" id="adminAddress" placeholder="गाव / तालुका"></div>
+        <div><label class="field-label">सध्याचा PIN</label><input class="field" id="oldPin" type="password" placeholder="सध्याचा PIN"></div>
+        <div><label class="field-label">नवीन PIN (पर्यायी)</label><input class="field" id="newPin" type="password" placeholder="नवीन PIN"></div>
+      </div>
+      <button class="btn btn-green" id="saveSettingsBtn" style="margin-top:12px">सेटिंग्ज सेव्ह करा</button>
+      <p class="hint">टीप: ही एकाच संगणक/ब्राउझरमध्ये चालणारी ऑफलाइन HTML वेबसाइट आहे. नोंदी त्या ब्राउझरमध्ये सेव्ह होतात. अनेक फोन/संगणकांवर एकाच वेळी डेटा दिसण्यासाठी Firebase सारखा ऑनलाइन डेटाबेस जोडावा लागेल.</p>
+    </div>
+  </section>
+</main>
+<div class="modal-backdrop" id="providerModal">
+  <div class="modal">
+    <h2 id="providerModalTitle">नवीन सेवा जोडा</h2>
+    <form id="providerForm">
+      <input type="hidden" id="providerId">
+      <label class="field-label">गाव *</label><input class="field" id="providerVillage" list="villageOptions" required placeholder="गावाचे नाव"><datalist id="villageOptions"></datalist>
+      <div style="height:10px"></div><label class="field-label">व्यक्तीचे नाव *</label><input class="field" id="providerName" class="field" required placeholder="पूर्ण नाव">
+      <div style="height:10px"></div><label class="field-label">सेवा / व्यवसाय *</label><select class="field" id="providerTrade" required></select>
+      <div style="height:10px"></div><label class="field-label">मोबाइल नंबर *</label><input class="field" id="providerPhone" type="tel" required placeholder="10 अंकी मोबाइल नंबर">
+      <div style="height:10px"></div><label class="field-label">पत्ता (पर्यायी)</label><input class="field" id="providerAddress" placeholder="गावातील पत्ता">
+      <div style="height:10px"></div><label class="field-label">फोटो (पर्यायी)</label><input class="field" id="providerPhoto" type="file" class="field" accept="image/*">
+      <div id="photoPreview" class="small"></div>
+      <div class="modal-actions"><button type="button" class="btn btn-outline" id="providerCancel">रद्द करा</button><button type="submit" class="btn btn-green">सेव्ह करा</button></div>
+    </form>
+  </div>
+</div>
+<div class="modal-backdrop" id="noticeModal">
+  <div class="modal">
+    <h2>गावातील सूचना जोडा</h2>
+    <form id="noticeForm">
+      <input type="hidden" id="noticeId">
+      <label class="field-label">सूचना *</label><textarea class="field" id="noticeText" required rows="4" placeholder="सूचना लिहा..."></textarea>
+      <div style="height:10px"></div><label class="field-label">सूचनेचा प्रकार</label><select class="field" id="noticeType"><option>सामान्य</option><option>महत्त्वाची</option><option>कार्यक्रम</option></select>
+      <div class="modal-actions"><button type="button" class="btn btn-outline" id="noticeCancel">रद्द करा</button><button type="submit" class="btn btn-green">सूचना सेव्ह करा</button></div>
+    </form>
+  </div>
+</div>
+<div id="toast" class="toast hidden" role="status"></div>
+<script>
+"use strict";
+const STORAGE_KEY="gaonSevaCenter_v2";
+let TRADES=[
+ {name:"इलेक्ट्रिशियन",icon:"⚡"},{name:"प्लंबर",icon:"🚰"},{name:"मेकॅनिक",icon:"🔧"},
+ {name:"सुतार",icon:"🪚"},{name:"वेल्डर",icon:"🧰"},{name:"मोबाईल रिपेअर",icon:"📱"},
+ {name:"ट्रॅक्टर / शेती सेवा",icon:"🚜"},{name:"RO / पाणी फिल्टर",icon:"💧"},{name:"CCTV",icon:"📹"},
+ {name:"AC / कूलर",icon:"❄️"},{name:"पेंटर",icon:"🖌️"},{name:"इतर सेवा",icon:"🛠️"}
+];
+const defaults={
+ villages:["मेहकर","विवेकानंद नगर"],
+ providers:[],
+ notices:[{id:"welcome",text:"गाव सेवा केंद्रात आपले स्वागत आहे! सेवा देणाऱ्या व्यक्तींची माहिती व्यवस्थापन विभागातून जोडा.",type:"सामान्य",date:new Date().toISOString()}],
+ admin:{name:"गाव सेवा केंद्र व्यवस्थापक",phone:"",whatsapp:"",address:"",pin:"123456"}
+};
+let data=loadData(),activeTrade="",editingPhoto="",toastTimer;
+if(data.admin && data.admin.pin==="1234"){data.admin.pin="123456";try{localStorage.setItem(STORAGE_KEY,JSON.stringify({...data,trades:TRADES}));}catch(e){}}
+function loadData(){try{const d=JSON.parse(localStorage.getItem(STORAGE_KEY));if(d&&Array.isArray(d.providers)&&Array.isArray(d.villages)){
+  const merged={...defaults,...d,admin:{...defaults.admin,...(d.admin||{})}};
+  if(Array.isArray(d.trades)&&d.trades.length) TRADES=d.trades;
+  else merged.trades=TRADES;
+  return merged;
+ }}catch(e){}return {...structuredClone(defaults),trades:TRADES};}
+function saveData(){data.trades=TRADES;localStorage.setItem(STORAGE_KEY,JSON.stringify(data));renderAll()}
+function id(){return "x"+Date.now().toString(36)+Math.random().toString(36).slice(2,7)}
+function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function norm(s){return String(s||"").toLocaleLowerCase("mr").trim()}
+function iconFor(trade){return (TRADES.find(t=>t.name===trade)||{icon:"🛠️"}).icon}
+function toast(msg){const el=document.getElementById("toast");el.textContent=msg;el.classList.remove("hidden");clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.add("hidden"),2800)}
+function renderVillages(){
+ const sel=document.getElementById("villageFilter"),old=sel.value;
+ sel.innerHTML='<option value="">सर्व गावे</option>'+data.villages.slice().sort((a,b)=>a.localeCompare(b,"mr")).map(v=>`<option value="${esc(v)}">${esc(v)}</option>`).join("");
+ if(data.villages.includes(old))sel.value=old;
+ document.getElementById("villageOptions").innerHTML=data.villages.map(v=>`<option value="${esc(v)}">`).join("");
+ document.getElementById("villageAdminList").innerHTML=data.villages.map(v=>`<div class="admin-row"><div class="grow"><strong>📍 ${esc(v)}</strong></div><button class="btn btn-danger" data-remove-village="${esc(v)}">काढा</button></div>`).join("")||'<div class="hint">अद्याप गाव जोडलेले नाही.</div>';
+}
+function renderCategories(){
+ const village=document.getElementById("villageFilter").value;
+ const visibleProviders=data.providers.filter(p=>!village||p.village===village);
+ const counts={};visibleProviders.forEach(p=>counts[p.trade]=(counts[p.trade]||0)+1);
+ document.getElementById("categories").innerHTML=TRADES.map(t=>`<button class="cat ${activeTrade===t.name?"active":""}" data-trade="${esc(t.name)}"><span class="cat-icon">${t.icon}</span><span>${esc(t.name)}</span><small>${counts[t.name]||0} सेवा</small></button>`).join("");
+}
+function renderProviders(){
+ const village=document.getElementById("villageFilter").value;
+ const list=data.providers.filter(p=>(!village||p.village===village)&&(!activeTrade||p.trade===activeTrade));
+ document.getElementById("totalCount").textContent=data.providers.length+" सेवा";
+ const resultsCount=document.getElementById("resultsCount");
+ if(resultsCount) resultsCount.textContent=list.length+" मिळाल्या";
+ const servicesGrid=document.getElementById("servicesGrid");
+ if(servicesGrid) servicesGrid.innerHTML=list.length?list.map(p=>`<article class="service-card">
+ <div class="avatar">${p.photo?`<img src="${p.photo}" alt="${esc(p.name)}">`:iconFor(p.trade)}</div>
+ <div class="service-info"><h3>${esc(p.name)}</h3><span class="tag">${iconFor(p.trade)} ${esc(p.trade)}</span>
+ <div class="meta">📍 ${esc(p.village)}${p.address?" · "+esc(p.address):""}</div><div class="meta">📞 ${esc(p.phone)}</div>
+ <div class="actions"><a class="btn btn-green" href="tel:${esc(p.phone.replace(/[^\d+]/g,""))}">📞 कॉल करा</a><a class="btn btn-soft" target="_blank" rel="noopener" href="https://wa.me/91${esc(p.phone.replace(/\D/g,"").replace(/^91/,""))}?text=${encodeURIComponent("नमस्कार, गाव सेवा केंद्रातून तुमचा संपर्क मिळाला.")}">WhatsApp</a></div></div></article>`).join(""):'<div class="empty"><div style="font-size:32px">🔎</div><b>सेवा सापडली नाही</b><p>गाव निवडा किंवा व्यवस्थापनातून नवीन सेवा जोडा.</p></div>';
+}
+function renderNotices(){
+ const list=data.notices.slice().sort((a,b)=>new Date(b.date)-new Date(a.date));
+ const publicNoticeList=document.getElementById("noticeList");
+ if(publicNoticeList) publicNoticeList.innerHTML=list.length?list.map(n=>`<div class="notice-item"><div><b>${n.type==="महत्त्वाची"?"🔴":n.type==="कार्यक्रम"?"🎉":"📌"} ${esc(n.text)}</b><div class="small">${new Date(n.date).toLocaleDateString("mr-IN")}</div></div></div>`).join(""):'<p class="hint">सध्या कोणतीही सूचना नाही.</p>';
+ const tickerText=document.getElementById("tickerText");
+ if(tickerText) tickerText.textContent=list.length?list.map(n=>n.text).join("　　✦　　"):"गाव सेवा केंद्रात आपले स्वागत आहे.";
+ document.getElementById("noticeAdminList").innerHTML=list.map(n=>`<div class="admin-row"><div class="grow"><strong>${esc(n.text)}</strong><small>${esc(n.type)}</small></div><button class="btn btn-danger" data-delete-notice="${esc(n.id)}">काढा</button></div>`).join("")||'<div class="hint">सूचना नाहीत.</div>';
+}
+function renderAdminContact(){
+ const a=data.admin;const phone=a.phone.replace(/\D/g,""),wa=a.whatsapp.replace(/\D/g,"");
+ document.getElementById("adminContactView").innerHTML=`<b>${esc(a.name||"व्यवस्थापक")}</b><br>${a.address?`📍 ${esc(a.address)}<br>`:""}${a.phone?`📞 ${esc(a.phone)}<br>`:""}<div class="actions">${phone?`<a class="btn btn-green" href="tel:${esc(phone)}">📞 कॉल करा</a>`:""}${wa?`<a class="btn btn-soft" target="_blank" rel="noopener" href="https://wa.me/${esc(wa)}">WhatsApp</a>`:""}</div>`;
+ document.getElementById("adminName").value=a.name||"";document.getElementById("adminPhone").value=a.phone||"";document.getElementById("adminWhatsApp").value=a.whatsapp||"";document.getElementById("adminAddress").value=a.address||"";
+}
+function renderProviderAdmin(){
+ document.getElementById("providerAdminList").innerHTML=data.providers.map(p=>`<div class="admin-row"><div class="avatar" style="width:42px;height:42px;border-radius:11px">${p.photo?`<img src="${p.photo}" alt="">`:iconFor(p.trade)}</div><div class="grow"><strong>${esc(p.name)}</strong><small>${esc(p.village)} · ${esc(p.trade)} · ${esc(p.phone)}</small></div><button class="btn btn-soft" data-edit-provider="${esc(p.id)}">बदला</button><button class="btn btn-danger" data-delete-provider="${esc(p.id)}">काढा</button></div>`).join("")||'<div class="hint">सेवा नोंदी नाहीत. “सेवा देणारी व्यक्ती जोडा” बटण वापरा.</div>';
+}
+function renderAll(){renderVillages();renderCategories();renderProviders();renderNotices();renderAdminContact();renderProviderAdmin();renderTradeAdmin();document.getElementById("year").textContent=new Date().getFullYear()}
+function renderTradeAdmin(){
+  const el=document.getElementById("tradeAdminList");
+  if(!el)return;
+  el.innerHTML=TRADES.map(t=>`<div class="admin-row"><div class="grow"><strong>${esc(t.icon)} ${esc(t.name)}</strong></div><button class="btn btn-danger" data-delete-trade="${esc(t.name)}">🗑️ डिलीट</button></div>`).join("")||'<div class="hint">सेवा प्रकार नाहीत.</div>';
+}
+
+function showAdmin(){document.getElementById("adminPanel").classList.add("open");document.getElementById("adminPanel").scrollIntoView({behavior:"smooth",block:"start"})}
+function openProvider(p=null){
+ document.getElementById("providerForm").reset();document.getElementById("providerId").value=p?.id||"";editingPhoto=p?.photo||"";
+ document.getElementById("providerModalTitle").textContent=p?"सेवा माहिती बदला":"नवीन सेवा जोडा";
+ document.getElementById("providerVillage").value=p?.village||document.getElementById("villageFilter").value||"";
+ document.getElementById("providerName").value=p?.name||"";document.getElementById("providerTrade").innerHTML=TRADES.map(t=>`<option value="${esc(t.name)}">${t.icon} ${esc(t.name)}</option>`).join("");document.getElementById("providerTrade").value=p?.trade||TRADES[0].name;
+ document.getElementById("providerPhone").value=p?.phone||"";document.getElementById("providerAddress").value=p?.address||"";document.getElementById("photoPreview").textContent=p?.photo?"सध्याचा फोटो सेव्ह आहे. नवीन फोटो निवडल्यास तो बदलेल.":"";
+ document.getElementById("providerModal").classList.add("open");
+}
+function closeModal(id){document.getElementById(id).classList.remove("open")}
+document.getElementById("adminOpen").onclick=showAdmin;document.getElementById("adminOpenBottom").onclick=showAdmin;document.getElementById("adminClose").onclick=()=>document.getElementById("adminPanel").classList.remove("open");
+document.getElementById("villageFilter").onchange=()=>{activeTrade="";renderCategories();renderProviders()};
+document.getElementById("categories").onclick=e=>{const b=e.target.closest("[data-trade]");if(!b)return;activeTrade=activeTrade===b.dataset.trade?"":b.dataset.trade;renderCategories();renderProviders()};
+document.getElementById("loginBtn").onclick=()=>{if(document.getElementById("adminPin").value===data.admin.pin && /^\d{6}$/.test(document.getElementById("adminPin").value)){document.getElementById("adminLogin").classList.add("hidden");document.getElementById("adminTools").classList.remove("hidden");document.getElementById("adminPin").value="";toast("व्यवस्थापन लॉगिन यशस्वी")}else toast("PIN चुकीचा आहे. पुन्हा प्रयत्न करा.")};
+document.getElementById("adminPin").addEventListener("keydown",e=>{if(e.key==="Enter")document.getElementById("loginBtn").click()});
+document.getElementById("newProviderBtn").onclick=()=>openProvider();document.getElementById("providerCancel").onclick=()=>closeModal("providerModal");
+document.getElementById("providerPhoto").onchange=e=>{const f=e.target.files[0];if(!f)return;if(f.size>1200000){toast("कृपया 1.2 MB पेक्षा लहान फोटो निवडा.");e.target.value="";return}const r=new FileReader();r.onload=()=>{editingPhoto=r.result;document.getElementById("photoPreview").textContent="नवीन फोटो निवडला आहे."};r.readAsDataURL(f)};
+document.getElementById("providerForm").onsubmit=e=>{
+ e.preventDefault();const village=document.getElementById("providerVillage").value.trim(),name=document.getElementById("providerName").value.trim(),trade=document.getElementById("providerTrade").value,phone=document.getElementById("providerPhone").value.trim(),address=document.getElementById("providerAddress").value.trim(),pid=document.getElementById("providerId").value;
+ if(!village||!name||!phone){toast("कृपया आवश्यक माहिती भरा.");return}
+ if(!/^[0-9+\-\s()]{8,16}$/.test(phone)){toast("मोबाइल नंबर तपासा.");return}
+ if(!data.villages.some(v=>norm(v)===norm(village)))data.villages.push(village);
+ const obj={id:pid||id(),village,name,trade,phone,address,photo:editingPhoto};
+ const ix=data.providers.findIndex(p=>p.id===pid);if(ix>=0)data.providers[ix]=obj;else data.providers.push(obj);
+ saveData();closeModal("providerModal");toast("सेवा माहिती सेव्ह झाली.");
+};
+document.getElementById("newVillageInput").addEventListener("keydown",e=>{if(e.key==="Enter")document.getElementById("addVillageBtn").click()});
+document.getElementById("newTradeName").addEventListener("keydown",e=>{if(e.key==="Enter")document.getElementById("addTradeBtn").click()});
+document.getElementById("addTradeBtn").onclick=()=>{
+  const name=document.getElementById("newTradeName").value.trim();
+  const icon=document.getElementById("newTradeIcon").value.trim()||"🛠️";
+  if(!name){toast("सेवा प्रकाराचे नाव लिहा.");return}
+  if(TRADES.some(t=>norm(t.name)===norm(name))){toast("हा सेवा प्रकार आधीच आहे.");return}
+  TRADES.push({name,icon});
+  document.getElementById("newTradeName").value="";document.getElementById("newTradeIcon").value="";
+  saveData();toast("नवीन सेवा प्रकार जोडला.");
+};
+document.getElementById("tradeAdminList").onclick=e=>{
+  const b=e.target.closest("[data-delete-trade]");if(!b)return;
+  const name=b.dataset.deleteTrade;
+  if(data.providers.some(p=>p.trade===name)){toast("या प्रकारात सेवा नोंदी आहेत. आधी त्या बदला किंवा काढा.");return}
+  if(confirm("“"+name+"” सेवा प्रकार काढायचा का?")){TRADES=TRADES.filter(t=>t.name!==name);if(activeTrade===name)activeTrade="";saveData();toast("सेवा प्रकार काढला.")}
+};
+document.getElementById("addVillageBtn").onclick=()=>{const v=document.getElementById("newVillageInput").value.trim();if(!v){toast("गावाचे नाव लिहा.");return}if(data.villages.some(x=>norm(x)===norm(v))){toast("हे गाव आधीच जोडले आहे.");return}data.villages.push(v);document.getElementById("newVillageInput").value="";saveData();toast("गाव जोडले.")};
+document.getElementById("providerAdminList").onclick=e=>{const edit=e.target.closest("[data-edit-provider]"),del=e.target.closest("[data-delete-provider]");if(edit){const p=data.providers.find(x=>x.id===edit.dataset.editProvider);if(p)openProvider(p)}if(del&&confirm("ही सेवा नोंद कायमची काढायची का?")){data.providers=data.providers.filter(x=>x.id!==del.dataset.deleteProvider);saveData();toast("सेवा नोंद काढली.")}};
+document.getElementById("villageAdminList").onclick=e=>{const b=e.target.closest("[data-remove-village]");if(!b)return;const v=b.dataset.removeVillage;if(data.providers.some(p=>p.village===v)){toast("या गावात सेवा नोंदी आहेत. आधी त्या बदला किंवा काढा.");return}if(confirm(v+" हे गाव काढायचे का?")){data.villages=data.villages.filter(x=>x!==v);saveData()}};
+document.getElementById("newNoticeBtn").onclick=()=>{document.getElementById("noticeForm").reset();document.getElementById("noticeId").value="";document.getElementById("noticeModal").classList.add("open")};document.getElementById("noticeCancel").onclick=()=>closeModal("noticeModal");
+document.getElementById("noticeForm").onsubmit=e=>{e.preventDefault();const text=document.getElementById("noticeText").value.trim();if(!text)return;data.notices.unshift({id:id(),text,type:document.getElementById("noticeType").value,date:new Date().toISOString()});saveData();closeModal("noticeModal");toast("सूचना जोडली.")};
+document.getElementById("noticeAdminList").onclick=e=>{const b=e.target.closest("[data-delete-notice]");if(b&&confirm("ही सूचना काढायची का?")){data.notices=data.notices.filter(n=>n.id!==b.dataset.deleteNotice);saveData();toast("सूचना काढली.")}};
+document.getElementById("saveSettingsBtn").onclick=()=>{const old=document.getElementById("oldPin").value,newPin=document.getElementById("newPin").value;if(newPin&&!/^\d{6}$/.test(newPin)){toast("नवीन PIN नेमका 6 अंकी असावा.");return}if(newPin&&old!==data.admin.pin){toast("PIN बदलण्यासाठी सध्याचा PIN योग्य टाका.");return}data.admin.name=document.getElementById("adminName").value.trim();data.admin.phone=document.getElementById("adminPhone").value.trim();data.admin.whatsapp=document.getElementById("adminWhatsApp").value.trim();data.admin.address=document.getElementById("adminAddress").value.trim();if(newPin)data.admin.pin=newPin;saveData();document.getElementById("oldPin").value="";document.getElementById("newPin").value="";toast("सेटिंग्ज सेव्ह झाल्या.")};
+document.getElementById("exportBtn").onclick=()=>{const blob=new Blob([JSON.stringify(data,null,2)],{type:"application/json"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="gaon-seva-backup.json";a.click();URL.revokeObjectURL(url);toast("बॅकअप डाउनलोड सुरू झाला.")};
+document.getElementById("importBtn").onclick=()=>document.getElementById("importFile").click();
+document.getElementById("importFile").onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const d=JSON.parse(r.result);if(!Array.isArray(d.villages)||!Array.isArray(d.providers)||!Array.isArray(d.notices))throw Error();if(confirm("सध्याचा डेटा आयात केलेल्या डेटाने बदलायचा का?")){data={...defaults,...d,admin:{...defaults.admin,...(d.admin||{})}};
+if(Array.isArray(d.trades)&&d.trades.length)TRADES=d.trades;
+saveData();toast("बॅकअप आयात झाला.")}}catch(err){toast("ही योग्य गाव सेवा बॅकअप JSON फाइल नाही.")}e.target.value=""};r.readAsText(f)};
+document.getElementById("shareBtn").onclick=async()=>{const shareData={title:"गाव सेवा केंद्र",text:"आपल्या गावातील सेवा शोधण्यासाठी गाव सेवा केंद्र पाहा.",url:location.href};try{if(navigator.share)await navigator.share(shareData);else{await navigator.clipboard.writeText(location.href);toast("वेबसाइटचा पत्ता कॉपी केला.")}}catch(e){}};
+document.querySelectorAll(".modal-backdrop").forEach(m=>m.addEventListener("click",e=>{if(e.target===m)m.classList.remove("open")}));
+renderAll();
+// Local browser counter. For a true shared total across all visitors, connect this to Firestore.
+try {
+  const visitorKey = "mehkarSevaVisitorCount_v1";
+  const visits = (Number(localStorage.getItem(visitorKey)) || 0) + 1;
+  localStorage.setItem(visitorKey, String(visits));
+  const counter = document.getElementById("visitorCount");
+  if (counter) counter.textContent = visits.toLocaleString("en-IN");
+} catch (e) {
+  const counter = document.getElementById("visitorCount");
+  if (counter) counter.textContent = "—";
+}
+</script>
+</body>
+</html>
